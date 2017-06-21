@@ -27,6 +27,7 @@ mybox[{20, 10}, {5, 5}]
 ### The second step is to animate this box
 
 (Note that the .nb file in this repository has more steps (more detailed description of the process I followed))
+(Note also that we will use discrete time steps to describe the motion, to use this in conjunction with the Raster function)
 
 ```
 mytimeAnimatedbox[{mx_Integer, ny_Integer}, {x0_Integer, 
@@ -40,3 +41,31 @@ mytimeAnimatedbox[{20, 10}, {5, 5}, {1, 1}]
 Above we made a 20 x 10 raster in 2 dimensions. The particle is started with coordinates (5,5).
 The new function takes values (vx,vy) which describe the speed of the particle in x and y directions respectively.
 
+### The third step is to figure out what happens after collisions with a wall.
+
+The particle's motion in 2D can be broken down into two independent motions in the x and y directions.
+In our simple case these two motions are similar to each other. We can therefore describe both motions 
+with the same function.
+
+Here we will try to figure out the function that describes the position of the particle 'n' time steps after it starts.
+The idea is simple as follows:
+* If incrementing the position by any number of time steps does not result in the particle hitting the wall boundaries,
+then the particle's position follows the simple rule $x = x_0 + v_x t$
+* If the particle hits a wall, we assume that the collision is elastic, so its velocity perpendicular to the wall 
+simply changes sign. 
+The above two rules can be implemented using the following function:
+```
+posn[pos_Integer, v_Integer, posmax_Integer, t_Integer] := 
+  1 + If[EvenQ[Floor[(pos + v (t - 1))/(posmax - 1)]], 
+    Mod[pos + v (t - 1), 
+     posmax - 
+      1], (posmax - 1) Floor[(pos + v (t - 1))/(posmax - 1) + 1] - 
+     pos - v (t - 1)];
+```
+
+In order to understand the above function we can plot it as a function of time steps. Below
+we plot it for the first 50 time steps:
+```
+ListLinePlot[Table[{n, posn[5, 1, 12, n]}, {n, 0, 50}]]
+```
+![position_vs_time plot](Fig3.png)
