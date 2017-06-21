@@ -23,3 +23,20 @@ mybox[{mx_Integer, ny_Integer}, {px_Integer, qy_Integer}] :=
 mybox[{20, 10}, {5, 5}]
 ```
 ![screenshot](Fig1.png)
+
+### The second step is to animate this box
+
+(Note that the .nb file in this repository has more steps (more detailed description of the process I followed))
+
+```
+mytimeAnimatedbox[{mx_Integer, ny_Integer}, {x0_Integer, 
+    y0_Integer}, {vx_Integer, vy_Integer}] := 
+  Animate[mybox[{mx, ny}, {x0 + vx t, y0 + vy t}], {t, 0, 
+    Min[(mx - x0)/vx, (ny - y0)/vy], 1}, AnimationRunning -> False];
+mytimeAnimatedbox[{20, 10}, {5, 5}, {1, 1}]
+```
+![animated_figure](Fig2.gif)
+
+Above we made a 20 x 10 raster in 2 dimensions. The particle is started with coordinates (5,5).
+The new function takes values (vx,vy) which describe the speed of the particle in x and y directions respectively.
+
