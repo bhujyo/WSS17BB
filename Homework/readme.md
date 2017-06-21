@@ -69,3 +69,14 @@ we plot it for the first 50 time steps:
 ListLinePlot[Table[{n, posn[5, 1, 10, n]}, {n, 0, 50}]]
 ```
 ![position_vs_time plot](Fig3.png)
+
+### The final step is to put all of this together to actually obtain the result
+
+The code that crteates the two-dimensional box for us as follows:
+```
+myFinalAnimatedbox[{m_Integer, n_Integer}, {x_Integer, 
+    y_Integer}, {vx_Integer, vy_Integer}, tt_Integer] := 
+  Animate[mybox[{m, n}, {posn[x, vx, m, t], posn[y, vy, n, t]}], {t, 
+    0, tt, 1}, AnimationRate -> 20];
+```
+![final_animated_figure](Fig4.gif)
