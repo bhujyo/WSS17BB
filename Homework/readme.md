@@ -99,5 +99,4 @@ my3DFinalbox[{10, 10, 10}, {5, 5, 3}, {1, 1, 1}, 100]
 ```
 ![3D_animated_figure](Fig5.gif)
 
-More cool examples in 3D are here: 
-[link]("https://wolfr.am/mARXbPv7")
+More cool examples in 3D are here: "https://wolfr.am/mARXbPv7"
