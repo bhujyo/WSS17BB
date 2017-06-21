@@ -66,6 +66,6 @@ posn[pos_Integer, v_Integer, posmax_Integer, t_Integer] :=
 In order to understand the above function we can plot it as a function of time steps. Below
 we plot it for the first 50 time steps:
 ```
-ListLinePlot[Table[{n, posn[5, 1, 12, n]}, {n, 0, 50}]]
+ListLinePlot[Table[{n, posn[5, 1, 10, n]}, {n, 0, 50}]]
 ```
 ![position_vs_time plot](Fig3.png)
