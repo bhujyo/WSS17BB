@@ -13,16 +13,13 @@ of motion perpendicular to the wall.
 
 ### The first step is to create a box and a point particle with given coordinates within the box.
 
-We first create a 2-dimensional raster:
+We first create a 2-dimensional raster with one of the elements highlighted using a different color:
 ```
-In[1]:= mybox[mx_Integer, ny_Integer] := 
-  Graphics[Raster[ConstantArray[1, {ny, mx}]], Frame -> True, 
-   FrameTicks -> None];
-mybox[20, 10]
+mybox[{mx_Integer, ny_Integer}, {px_Integer, qy_Integer}] := 
+  Graphics[Raster[
+    ReplacePart[
+     ConstantArray[{1, 1, 1}, {ny, mx}], {qy, px} -> {1, 0, 0}]], 
+   Frame -> True, FrameTicks -> None];
+mybox[{20, 10}, {5, 5}]
 ```
 ![screenshot](Fig1.png)
-
-We then create a particle by using a color to highlight one of the elements of the raster:
-```
-
-```
