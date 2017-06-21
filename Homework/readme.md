@@ -4,7 +4,10 @@ This repository was made for the Homework Assignment for Wolfram Summer School 2
 The "FunwithPhysicsin2D.nb" file in this repository contains code for implementing
 the steps described in this readme file.
 
-## Motion of a classical particle in a box
+## Author: Bhubanjyoti Bhattacharya
+## Date: June 21,2017
+
+## Motion of a classical particle in a box (2 dimensions)
 
 Here we will describe the motion of a classical particle inside a box with hard walls.
 The particle will be represented by a single unit of a 2D (or 3D) raster. The interactions
@@ -80,3 +83,19 @@ myFinalAnimatedbox[{m_Integer, n_Integer}, {x_Integer,
     0, tt, 1}, AnimationRate -> 20];
 ```
 ![final_animated_figure](Fig4.gif)
+
+## We will extend this construction to 3 dimensions
+
+### Instead of using a 2D Raster we use a 3D Raster
+
+Using the same techniques as before we can construct the function that generates a free particle in a 3D box:
+```
+my3DFinalbox[{m_Integer, n_Integer, o_Integer}, {x_Integer, y_Integer,
+     z_Integer}, {vx_Integer, vy_Integer, vz_Integer}, tt_Integer] := 
+  Animate[my3Dbox[{m, n, o}, {posn[x, vx, m, t], posn[y, vy, n, t], 
+     posn[z, vz, o, t]}], {t, 0, tt, 1}, AnimationRate -> 5, 
+   AnimationRunning -> True];
+my3DFinalbox[{10, 10, 10}, {5, 5, 3}, {1, 1, 1}, 100]
+```
+![3D_animated_figure](Fig5.gif)
+
