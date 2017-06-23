@@ -1,80 +1,19 @@
-# https://wolfr.am/ss2017git
+# https://wolfr.am/mDLMfxbm
 
-This is a sample repository for the Wolfram Summer School 2017
-you can clone or fork this repository to get started
+# What can special characters in a paper on arxiv.org tell us?   (Preliminary title)
 
-Thing to do to get started with GIT:
+## Special characters in a paper on arxiv.org
 
-## Create a GitHub account
-https://github.com/join
+We would like to characterize a paper on the arXiv by the special characters it contains. We start with the data available from https://mir.fi.muni.cz/MREC/.
+We analyze this data to find out the frequency of special characters (like greek and/or mathematical symbols). We would like to study this as a function of
+the time at which the paper appeared to see if there was a certain period of growth, stability, and decline of usage of that character.
 
-## Create a new repo
-you can either create a new repo or fork this one
+## Data Science Objective
 
-## Give your instructor write permissions
-you need to give write permission to that repo to your tutor and to @alisonkimball
-in instructors.csv you can find a list of all instructors.
+The eventual goal of the project is to use machine learning techniques to see if we can get meaningful information about the scientific content of a paper,
+by studying the special characters used in it. We will use a small subset of papers as a training set to characterize the meaning of each special character.
+The idea is to learn from the papers in the training set, where the algorithm learns about a special character by analyzing the words that appear close to 
+it in the text.
 
-|Github        |Tutor         |Email         |
-|------------- |--------------|--------------|
-|https://github.com/alisonkimball|Alison Kimball|alisonk@wolfram.com|
-|https://github.com/anonymouse64|Ian Johnson|ijohnson@wolfram.com|
-|https://github.com/batracos|Giulio Alessandrini|giulioa@wolfram.com|
-|https://github.com/bernate|Bernat Espigulé|bernatep@gmail.com|
-|https://github.com/carlobarbieri|Carlo Barbieri|carlob@wolfram.com|
-|https://github.com/digiflux|Vitaliy Kaurov|vitaliyk@wolfram.com|
-|https://github.com/etiennebcp|Etienne Bernard|etienneb@wolfram.com|
-|https://github.com/gerli|Gerli Jõgeva|gerlij@wolfram.com|
-|https://github.com/jofregit|Jofre Espigule-Pons|jofree@wolfram.com|
-|https://github.com/KMDaily|Kevin Daily|kevind@wolfram.com|
-|https://github.com/KyleKeane|Kyle Keane|kylek@wolfram.com|
-|https://github.com/levantina|Valentina Biagini|vbiagini@gmail.com|
-|https://github.com/maboyer|Mark Boyer|markb@wolfram.com|
-|https://github.com/matteosal|Matteo Salvarezza|matteos@wolfram.com|
-|https://github.com/matthews-wri|Matthew Szudzik|mszudzik@wolfram.com|
-|https://github.com/paulcabbott|Paul Abbott|abbott@wolfram.com|
-|https://github.com/publicusrex|Peter Barendse|pbarendse@wolfram.com|
-|https://github.com/r-nachbar|Robert Nachbar|rnachbar@wolfram.com|
-|https://github.com/riccardodivirgilio|Riccardo Di Virgilio|riccardod@wolfram.com|
-|https://github.com/timotheev|Timothee Verdier|timotheev@wolfram.com|
-|https://github.com/turnmlz|Lizzie Turner|lizziet@wolfram.com|
-|https://github.com/xavierrw|Xavier Roy|xavierr@wolfram.com|
-
-## Download and install a Git UI
-*On OSX / Wndows*:  
-Download and install github desktop:  
-https://desktop.github.com  
-
-*On Ubuntu*:  
-Download and install git kraken:  
-https://www.gitkraken.com  
-Login and authenticate with GitHub  
-https://support.gitkraken.com/integrations/github
-
-## Install command line utility (optional)
-https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-
-## Clone the repo locally
-by clicking on the button CLONE OR DOWNLOAD and then to OPEN IN DESKTOP
-
-## Write a readme using MarkDown
-a nice cheatsheet can be found here: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-the readme should contain: 
-1. what your project is about
-2. how to run your code
-3. examples, code documentation, etc
-
-## Organize your code
-in this repository you will find 2 different ways to organize your code, the simple way and the programmer way.
-
-### The simple way
-you split your logic into functions that you need for your projects and notebooks that you use to visualize data and show final results.
-1. the code is in `starthere/simple.m`
-2. the notebook used for visualization is in `starthere/simple.nb`
-
-### The programmer way
-I prepared a very simple project paclet you can use, it provides a way to organize your code and your data
-
-1. the code is in paclet in `starthere/Project` folder
-2. raw source data can be put in `starthere/Project/Assets/` folder
-3. the notebook used for visualization is in `starthere/advanced.nb`
+More details on the project, the codes, and results will be made available here:
+https://wolfr.am/mDMM7TRV
