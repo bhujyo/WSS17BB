@@ -19,11 +19,12 @@ allSymbols[article_] :=
   KeyDrop[Counts[Characters[Import[article, "Text"]]], 
    unwantedSymbols];
 ```
+
 To visualize the input data we made a word cloud of all symbols available in the hep-ph arXives in 2006:
 ![2006hep-ph word cloud](2006hepphCloud.jpg)
+
 We made another visual for the astro-ph arXives to show the evolution of the word cloud from 1995 till 2006:
 ![Evolving word cloud](wordcloudastro.gif)
-
 
 ## Data Science Objective
 
