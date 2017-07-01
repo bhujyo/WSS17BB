@@ -38,6 +38,18 @@ $\alpha$ compared to some other arXives.
 The data analysis is complicated by the shear number of documents to analyze. Our next step is to set up
 a database and use that for further, more refined analyses.
 
+## Creation of a database
+
+We have now added a database file "fullDataset.mx" to this repository. Using the ```Dataset``` function in 
+Mathematica we have prepared this dataset. Also included now are the files "Database.nb" and "DataAnalysis.nb"
+
+We can now produce plots for the variation of appearance of the symbol $\alpha$ over several years in different 
+arXives. We have also added the feature where in these plots we can modify the bin size over several months 
+(between 1 and 12 months). A few example figures are below:
+
+![Evolving alpha](allplots2.jpg)
+![Changing bin sizes](alpha2006.gif)
+
 ## Data Science Objective
 
 The eventual goal of the project is to use machine learning techniques to see if we can get meaningful information about the scientific content of a paper,
