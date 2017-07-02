@@ -50,9 +50,44 @@ arXives. We have also added the feature where in these plots we can modify the b
 ![Evolving alpha](allplots2.jpg)
 ![Changing bin sizes](alpha2006.gif)
 
+We also created a set of Word Clouds to visualize all the symbols used in papers in the different arXives over 
+the entire corpus of data files used. This is what it looks like:
+
+![word-clouds for all symbols](WCImages.jpg)
+
+In order to make the above word clouds we used the following simple code snippet:
+```
+arXivCloud[arxiv_] := 
+  WordCloud[
+   Merge[fullDataset[Select[#Type == arxiv &]][All, "Symbols"]//Normal, Total], 
+     PlotLabel -> Style[arxiv, 30]];
+SetAttributes[arXivCloud, Listable];
+cloudTable = arXivCloud@arXives;
+ImageCollage[cloudTable, Background -> None, Method -> "Rows"];
+```
+
 ## Data Science Objective
 
 The eventual goal of the project is to use machine learning techniques to see if we can get meaningful information about the scientific content of a paper,
 by studying the special characters used in it. We will use a small subset of papers as a training set to characterize the meaning of each special character.
 The idea is to learn from the papers in the training set, where the algorithm learns about a special character by analyzing the words that appear close to 
 it in the text.
+
+We used the function ```Classify``` on our dataset where the classification was done using non-stopwords in the title and the symbols in a paper to classify 
+it by the arXiv category for the year 2000. The following is a snippet of the code we used with Classify:
+```
+trainTitleWords[arXiv_] := Counts[Flatten@Normal@dataSet[arXiv][All, "Title"]];
+trainSymbols[arXiv_] := Counts[Flatten@Keys@Normal@dataSet[arXiv][All, "Symbols"]];
+trainBuzz[arXiv_] := Keys[Merge[{trainTitleWords[arXiv], trainSymbols[arXiv]}, Total]] ->
+    arXiv;
+trainingData = trainBuzz /@ arXives;
+classifier = Classify[trainingData];
+``` 
+We then checked how the ```classifier``` performs on data from years other than 2000. We picked 881 articles to test our ```classifier```on and found that 
+the classifier function and found:
+```
+<|True -> 319, False -> 562|>
+```
+This indicates a low success rate, and shows that a ```classifier``` function needs inputs that are further processed. The idea is to feed in the
+probability of obtaining each arXiv class given the different symbols that occur in a paper. In order to perform this task we will need to extract more
+information from our corpus, which is clearly the next step.
