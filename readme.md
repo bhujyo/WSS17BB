@@ -53,7 +53,7 @@ arXives. We have also added the feature where in these plots we can modify the b
 We also created a set of Word Clouds to visualize all the symbols used in papers in the different arXives over 
 the entire corpus of data files used. This is what it looks like:
 
-![word-clouds for all symbols](WCImages.jpg)
+![word-clouds for all symbols](output/WCImages.jpg)
 
 In order to make the above word clouds we used the following simple code snippet:
 ```
@@ -70,7 +70,7 @@ We also studied the closeness of different branches of arXiv as shown by the mos
 prominent symbols in each paper of each arXiv Type using the ```ClusteringTree``` 
 function. The clustering tree graph looks like this:
 
-![clustering tree](output/ctree.jpg)
+![clustering tree](output/cTree.jpg)
 
 ## Data Science Objective
 
