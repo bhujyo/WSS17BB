@@ -98,4 +98,4 @@ This indicates a low success rate (~ 36%), and shows that our classifier functio
 probability of obtaining each arXiv class given the different symbols that occur in a paper. In order to perform this task we will need to extract more
 information from our corpus, which is clearly the future step.
 
-### Early versions of project notebooks are available inside the "other notebooks" folder: 
+### Early versions of project notebooks are available inside the "other notebooks" folder here: https://wolfr.am/mV68VBn7
