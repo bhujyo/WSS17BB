@@ -21,16 +21,16 @@ allSymbols[article_] :=
 ```
 
 To visualize the input data we made a word cloud of all symbols available in the hep-ph arXives in 2006:
-![2006hep-ph word cloud](2006hepphCloud.jpg)
+![2006hep-ph word cloud](output/2006hepphCloud.jpg)
 
 We made another visual for the astro-ph arXives to show the evolution of the word cloud from 1995 till 2006:
-![Evolving word cloud](wordcloudastro.gif)
+![Evolving word cloud](output/wordcloudastro.gif)
 
 Also we produced some DateListPlots for the various arXives. In these plots we represent the frequency of 
 occurence of the character $\alpha$ in different arXives over time. (We have normalized the frequencies
 based on the number of articles; if there were no articles over some time period we have set the frequency 
 to zero for that period.)
-![Evolving alpha](allplots.jpg)
+![Evolving alpha](output/allplots.jpg)
 
 Clearly some arXives, especially hep-ph and hep-th show a fairly large and stable frequency of usage of 
 $\alpha$ compared to some other arXives.
@@ -47,8 +47,8 @@ We can now produce plots for the variation of appearance of the symbol $\alpha$ 
 arXives. We have also added the feature where in these plots we can modify the bin size over several months 
 (between 1 and 12 months). A few example figures are below:
 
-![Evolving alpha](allplots2.jpg)
-![Changing bin sizes](alpha2006.gif)
+![Evolving alpha](output/allplots2.jpg)
+![Changing bin sizes](output/alpha2006.gif)
 
 We also created a set of Word Clouds to visualize all the symbols used in papers in the different arXives over 
 the entire corpus of data files used. This is what it looks like:
@@ -65,6 +65,12 @@ SetAttributes[arXivCloud, Listable];
 cloudTable = arXivCloud@arXives;
 ImageCollage[cloudTable, Background -> None, Method -> "Rows"];
 ```
+
+We also studied the closeness of different branches of arXiv as shown by the most 
+prominent symbols in each paper of each arXiv Type using the ```ClusteringTree``` 
+function. The clustering tree graph looks like this:
+
+![clustering tree](output/ctree.jpg)
 
 ## Data Science Objective
 
@@ -88,6 +94,6 @@ the classifier function and found:
 ```
 <|True -> 319, False -> 562|>
 ```
-This indicates a low success rate, and shows that a ```classifier``` function needs inputs that are further processed. The idea is to feed in the
+This indicates a low success rate (~ 36%), and shows that our classifier function needs input that is further processed. The idea is to feed in the
 probability of obtaining each arXiv class given the different symbols that occur in a paper. In order to perform this task we will need to extract more
-information from our corpus, which is clearly the next step.
+information from our corpus, which is clearly the future step.

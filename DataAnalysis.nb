@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1639688,      27379]
-NotebookOptionsPosition[   1634886,      27257]
-NotebookOutlinePosition[   1635442,      27276]
-CellTagsIndexPosition[   1635399,      27273]
+NotebookDataLength[   1627098,      27118]
+NotebookOptionsPosition[   1622448,      27000]
+NotebookOutlinePosition[   1623004,      27019]
+CellTagsIndexPosition[   1622961,      27016]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -340,8 +340,6 @@ Cell["Clustering Tree", "Subsection",
   3.7082140692737384`*^9}},ExpressionUUID->"fedf857a-e816-493d-ad89-\
 1e4bd429a3f9"],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{"ClusteringTree", "[", 
   RowBox[{"mostFrequentSymbols", "[", "40", "]"}], "]"}]], "Input",
@@ -349,263 +347,8 @@ Cell[BoxData[
   3.708214693775988*^9, 3.708214859786971*^9}, {3.7082164191059523`*^9, 
   3.708216425934169*^9}, {3.708218366830413*^9, 
   3.708218367811419*^9}},ExpressionUUID->"5e3d1587-7ab1-4475-b656-\
-b8bf9d709d12"],
-
-Cell[BoxData[
- GraphicsBox[
-  NamespaceBox["NetworkGraphics",
-   DynamicModuleBox[{Typeset`graph = HoldComplete[
-     Graph[{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
-       20, 21, 22, 23, 24, 25}, {
-      Null, {{1, 2}, {1, 3}, {3, 4}, {4, 5}, {5, 6}, {6, 7}, {7, 8}, {8, 9}, {
-       8, 10}, {10, 11}, {10, 12}, {12, 13}, {12, 14}, {14, 15}, {14, 16}, {7,
-        17}, {6, 18}, {18, 19}, {19, 20}, {19, 21}, {18, 22}, {5, 23}, {4, 
-       24}, {3, 25}}}, {
-      AlignmentPoint -> Center, AspectRatio -> Automatic, Axes -> False, 
-       AxesLabel -> None, AxesOrigin -> Automatic, AxesStyle -> {}, 
-       Background -> None, BaselinePosition -> Automatic, BaseStyle -> {}, 
-       ContentSelectable -> Automatic, EdgeLabels -> {None}, EdgeStyle -> {
-         GrayLevel[0.65]}, Editable -> False, Epilog -> {}, FormatType -> 
-       TraditionalForm, Frame -> False, FrameLabel -> None, FrameStyle -> {}, 
-       FrameTicks -> None, FrameTicksStyle -> {}, 
-       GraphLayout -> {
-        "LayeredEmbedding", "RootVertex" -> 1, "Orientation" -> Top}, 
-       GraphStyle -> Automatic, GridLines -> None, GridLinesStyle -> {}, 
-       ImageMargins -> 0., ImagePadding -> All, ImageSize -> Automatic, 
-       LabelStyle -> {}, PerformanceGoal -> "Speed", PlotLabel -> None, 
-       PlotRange -> All, PlotRangeClipping -> False, PlotRangePadding -> 
-       Automatic, PlotRegion -> Automatic, PlotTheme -> Automatic, 
-       Prolog -> {}, 
-       Properties -> {
-        "GraphProperties" -> {
-          "LeafLabels" -> 
-           Association[
-            2 -> "astro-ph", 9 -> "cond-mat", 11 -> "gr-qc", 13 -> "nucl-th", 
-             15 -> "physics", 16 -> "math-ph", 17 -> "hep-th", 20 -> "hep-ex",
-              21 -> "nucl-ex", 22 -> "hep-ph", 23 -> "hep-lat", 24 -> 
-             "quant-ph", 25 -> "math"]}}, RotateLabel -> True, Ticks -> 
-       Automatic, TicksStyle -> {}, VertexLabels -> {23 -> Placed[
-           Framed[
-            Short["hep-lat"], Background -> GrayLevel[1], FrameStyle -> 
-            GrayLevel[1], FrameMargins -> {{0, 0}, {0, 0}}, RoundingRadius -> 
-            2], Center], 9 -> Placed[
-           Framed[
-            Short["cond-mat"], Background -> GrayLevel[1], FrameStyle -> 
-            GrayLevel[1], FrameMargins -> {{0, 0}, {0, 0}}, RoundingRadius -> 
-            2], Center], 22 -> Placed[
-           Framed[
-            Short["hep-ph"], Background -> GrayLevel[1], FrameStyle -> 
-            GrayLevel[1], FrameMargins -> {{0, 0}, {0, 0}}, RoundingRadius -> 
-            2], Center], 17 -> Placed[
-           Framed[
-            Short["hep-th"], Background -> GrayLevel[1], FrameStyle -> 
-            GrayLevel[1], FrameMargins -> {{0, 0}, {0, 0}}, RoundingRadius -> 
-            2], Center], 24 -> Placed[
-           Framed[
-            Short["quant-ph"], Background -> GrayLevel[1], FrameStyle -> 
-            GrayLevel[1], FrameMargins -> {{0, 0}, {0, 0}}, RoundingRadius -> 
-            2], Center], 13 -> Placed[
-           Framed[
-            Short["nucl-th"], Background -> GrayLevel[1], FrameStyle -> 
-            GrayLevel[1], FrameMargins -> {{0, 0}, {0, 0}}, RoundingRadius -> 
-            2], Center], 16 -> Placed[
-           Framed[
-            Short["math-ph"], Background -> GrayLevel[1], FrameStyle -> 
-            GrayLevel[1], FrameMargins -> {{0, 0}, {0, 0}}, RoundingRadius -> 
-            2], Center], 15 -> Placed[
-           Framed[
-            Short["physics"], Background -> GrayLevel[1], FrameStyle -> 
-            GrayLevel[1], FrameMargins -> {{0, 0}, {0, 0}}, RoundingRadius -> 
-            2], Center], 21 -> Placed[
-           Framed[
-            Short["nucl-ex"], Background -> GrayLevel[1], FrameStyle -> 
-            GrayLevel[1], FrameMargins -> {{0, 0}, {0, 0}}, RoundingRadius -> 
-            2], Center], 20 -> Placed[
-           Framed[
-            Short["hep-ex"], Background -> GrayLevel[1], FrameStyle -> 
-            GrayLevel[1], FrameMargins -> {{0, 0}, {0, 0}}, RoundingRadius -> 
-            2], Center], 2 -> Placed[
-           Framed[
-            Short["astro-ph"], Background -> GrayLevel[1], FrameStyle -> 
-            GrayLevel[1], FrameMargins -> {{0, 0}, {0, 0}}, RoundingRadius -> 
-            2], Center], 11 -> Placed[
-           Framed[
-            Short["gr-qc"], Background -> GrayLevel[1], FrameStyle -> 
-            GrayLevel[1], FrameMargins -> {{0, 0}, {0, 0}}, RoundingRadius -> 
-            2], Center], 25 -> Placed[
-           Framed[
-            Short["math"], Background -> GrayLevel[1], FrameStyle -> 
-            GrayLevel[1], FrameMargins -> {{0, 0}, {0, 0}}, RoundingRadius -> 
-            2], Center]}, 
-       VertexShape -> {
-        20 -> Null, 24 -> Null, 3 -> Null, 13 -> Null, 15 -> Null, 25 -> Null,
-          8 -> Null, 1 -> Null, 21 -> Null, 10 -> Null, 11 -> Null, 18 -> 
-         Null, 19 -> Null, 6 -> Null, 17 -> Null, 14 -> Null, 7 -> Null, 4 -> 
-         Null, 2 -> Null, 22 -> Null, 9 -> Null, 12 -> Null, 16 -> Null, 23 -> 
-         Null, 5 -> Null}, VertexSize -> {0}, 
-       VertexWeight -> {
-        37., 0, 37., 36., 36., 35., 35., 34., 0, 34., 0, 34., 0, 34., 0, 0, 0,
-          35., 34., 0, 0, 0, 0, 0, 0}}]]}, 
-    TagBox[GraphicsGroupBox[{
-       {GrayLevel[0.65], Opacity[0.7], LineBox[CompressedData["
-1:eJxTTMoPSmVmYGCQAGImKNbeauP45hOLwxLHWDOpUkUozehwkP92YlKOvAO6
-/CYNGZ99BRxweXQ+TL3VnN9hE95JY8hDxLnh8ujqYfZD9EngNA8mj64eou63
-vQ5YnwhO82Dy6Ooh/Nf2EH2CGPKo4SGIod4GzL9tj+pPhDzEnC9weXT1DFCg
-A7UHl3k6KOGC4MPU20DdjS4Ps98GxV9fMNQ7oOhDl/8Nl0fnw9TD/IEuD4sP
-mDx6eMLkYf5Fl4fFP0weXT1qfLHgNA8mDwDn0loD
-         "]]}, 
-       {Hue[0.6, 0.2, 0.8], EdgeForm[{GrayLevel[0], Opacity[0.7]}], 
-        InsetBox["", {2.618614682831909, 8.728715609439696}, 
-         Automatic, {0., 0.}], {
-         InsetBox["", {2.182178902359924, 7.855844048495727}, 
-          Automatic, {0., 0.}], InsetBox[
-          FrameBox["\<\"astro-ph\"\>",
-           Background->GrayLevel[1],
-           FrameMargins->{{0, 0}, {0, 0}},
-           FrameStyle->GrayLevel[1],
-           RoundingRadius->2,
-           StripOnInput->False], {2.182178902359924, 7.855844048495727},
-          BaseStyle->"Graphics"]}, 
-        InsetBox["", {3.0550504633038935, 7.855844048495727}, 
-         Automatic, {0., 0.}], 
-        InsetBox["", {2.618614682831909, 6.982972487551757}, 
-         Automatic, {0., 0.}], 
-        InsetBox["", {2.182178902359924, 6.110100926607787}, 
-         Automatic, {0., 0.}], 
-        InsetBox["", {1.7457431218879393, 5.2372293656638185}, 
-         Automatic, {0., 0.}], 
-        InsetBox["", {0.8728715609439697, 4.364357804719848}, 
-         Automatic, {0., 0.}], 
-        InsetBox["", {0.43643578047198495, 3.4914862437758787}, 
-         Automatic, {0., 0.}], {
-         InsetBox["", {0., 2.6186146828319092}, Automatic, {0., 0.}], InsetBox[
-          FrameBox["\<\"cond-mat\"\>",
-           Background->GrayLevel[1],
-           FrameMargins->{{0, 0}, {0, 0}},
-           FrameStyle->GrayLevel[1],
-           RoundingRadius->2,
-           StripOnInput->False], {0., 2.6186146828319092},
-          BaseStyle->"Graphics"]}, 
-        InsetBox["", {0.8728715609439697, 2.6186146828319092}, 
-         Automatic, {0., 0.}], {
-         InsetBox["", {0.43643578047198495, 1.7457431218879398}, 
-          Automatic, {0., 0.}], InsetBox[
-          FrameBox["\<\"gr-qc\"\>",
-           Background->GrayLevel[1],
-           FrameMargins->{{0, 0}, {0, 0}},
-           FrameStyle->GrayLevel[1],
-           RoundingRadius->2,
-           StripOnInput->False], {0.43643578047198495, 1.7457431218879398},
-          BaseStyle->"Graphics"]}, 
-        InsetBox["", {1.3093073414159546, 1.7457431218879398}, 
-         Automatic, {0., 0.}], {
-         InsetBox["", {0.8728715609439697, 0.8728715609439703}, 
-          Automatic, {0., 0.}], InsetBox[
-          FrameBox["\<\"nucl-th\"\>",
-           Background->GrayLevel[1],
-           FrameMargins->{{0, 0}, {0, 0}},
-           FrameStyle->GrayLevel[1],
-           RoundingRadius->2,
-           StripOnInput->False], {0.8728715609439697, 0.8728715609439703},
-          BaseStyle->"Graphics"]}, 
-        InsetBox["", {1.7457431218879393, 0.8728715609439703}, 
-         Automatic, {0., 0.}], {
-         InsetBox["", {1.3093073414159546, 0.}, Automatic, {0., 0.}], InsetBox[
-          FrameBox["\<\"physics\"\>",
-           Background->GrayLevel[1],
-           FrameMargins->{{0, 0}, {0, 0}},
-           FrameStyle->GrayLevel[1],
-           RoundingRadius->2,
-           StripOnInput->False], {1.3093073414159546, 0.},
-          BaseStyle->"Graphics"]}, {
-         InsetBox["", {2.182178902359924, 0.}, Automatic, {0., 0.}], InsetBox[
-          FrameBox["\<\"math-ph\"\>",
-           Background->GrayLevel[1],
-           FrameMargins->{{0, 0}, {0, 0}},
-           FrameStyle->GrayLevel[1],
-           RoundingRadius->2,
-           StripOnInput->False], {2.182178902359924, 0.},
-          BaseStyle->"Graphics"]}, {
-         InsetBox["", {1.3093073414159546, 3.4914862437758787}, 
-          Automatic, {0., 0.}], InsetBox[
-          FrameBox["\<\"hep-th\"\>",
-           Background->GrayLevel[1],
-           FrameMargins->{{0, 0}, {0, 0}},
-           FrameStyle->GrayLevel[1],
-           RoundingRadius->2,
-           StripOnInput->False], {1.3093073414159546, 3.4914862437758787},
-          BaseStyle->"Graphics"]}, 
-        InsetBox["", {2.618614682831909, 4.364357804719848}, 
-         Automatic, {0., 0.}], 
-        InsetBox["", {2.182178902359924, 3.4914862437758787}, 
-         Automatic, {0., 0.}], {
-         InsetBox["", {1.7457431218879393, 2.6186146828319092}, 
-          Automatic, {0., 0.}], InsetBox[
-          FrameBox["\<\"hep-ex\"\>",
-           Background->GrayLevel[1],
-           FrameMargins->{{0, 0}, {0, 0}},
-           FrameStyle->GrayLevel[1],
-           RoundingRadius->2,
-           StripOnInput->False], {1.7457431218879393, 2.6186146828319092},
-          BaseStyle->"Graphics"]}, {
-         InsetBox["", {2.618614682831909, 2.6186146828319092}, 
-          Automatic, {0., 0.}], InsetBox[
-          FrameBox["\<\"nucl-ex\"\>",
-           Background->GrayLevel[1],
-           FrameMargins->{{0, 0}, {0, 0}},
-           FrameStyle->GrayLevel[1],
-           RoundingRadius->2,
-           StripOnInput->False], {2.618614682831909, 2.6186146828319092},
-          BaseStyle->"Graphics"]}, {
-         InsetBox["", {3.0550504633038935, 3.4914862437758787}, 
-          Automatic, {0., 0.}], InsetBox[
-          FrameBox["\<\"hep-ph\"\>",
-           Background->GrayLevel[1],
-           FrameMargins->{{0, 0}, {0, 0}},
-           FrameStyle->GrayLevel[1],
-           RoundingRadius->2,
-           StripOnInput->False], {3.0550504633038935, 3.4914862437758787},
-          BaseStyle->"Graphics"]}, {
-         InsetBox["", {2.618614682831909, 5.2372293656638185}, 
-          Automatic, {0., 0.}], InsetBox[
-          FrameBox["\<\"hep-lat\"\>",
-           Background->GrayLevel[1],
-           FrameMargins->{{0, 0}, {0, 0}},
-           FrameStyle->GrayLevel[1],
-           RoundingRadius->2,
-           StripOnInput->False], {2.618614682831909, 5.2372293656638185},
-          BaseStyle->"Graphics"]}, {
-         InsetBox["", {3.0550504633038935, 6.110100926607787}, 
-          Automatic, {0., 0.}], InsetBox[
-          FrameBox["\<\"quant-ph\"\>",
-           Background->GrayLevel[1],
-           FrameMargins->{{0, 0}, {0, 0}},
-           FrameStyle->GrayLevel[1],
-           RoundingRadius->2,
-           StripOnInput->False], {3.0550504633038935, 6.110100926607787},
-          BaseStyle->"Graphics"]}, {
-         InsetBox["", {3.4914862437758787, 6.982972487551757}, 
-          Automatic, {0., 0.}], InsetBox[
-          FrameBox["\<\"math\"\>",
-           Background->GrayLevel[1],
-           FrameMargins->{{0, 0}, {0, 0}},
-           FrameStyle->GrayLevel[1],
-           RoundingRadius->2,
-           StripOnInput->False], {3.4914862437758787, 6.982972487551757},
-          BaseStyle->"Graphics"]}}}],
-     MouseAppearanceTag["NetworkGraphics"]],
-    AllowKernelInitialization->False]],
-  DefaultBaseStyle->{
-   "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> Hue[0.8, 1., 0.6]},
-  FormatType->TraditionalForm,
-  FrameTicks->None]], "Output",
- CellChangeTimes->{
-  3.7082145815225477`*^9, 3.7082147083996406`*^9, 3.7082147436619825`*^9, {
-   3.7082147902664595`*^9, 3.7082148605838194`*^9}, 3.7082164266685505`*^9, 
-   3.7082184008889027`*^9},ExpressionUUID->"ff9b7ea2-44fb-46af-b533-\
-82d11277ee81"]
-}, Open  ]]
-}, Closed]],
+b8bf9d709d12"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -27253,7 +26996,7 @@ DixAo9HAYDiK13nanc6VT11cfUaSbRAc+v1BvPxTrdWiMzH/FsvZPvf/AIjb
   3.7081913992473993`*^9}},ExpressionUUID->"81ce9d79-70e1-459c-83e7-\
 59ebd9a267f1"]
 }, Closed]]
-}, Closed]]
+}, Open  ]]
 },
 WindowSize->{644, 474},
 WindowMargins->{{213, Automatic}, {Automatic, 101}},
@@ -27317,70 +27060,66 @@ Cell[10826, 300, 1177, 32, 69, "Input", "ExpressionUUID" -> \
 Cell[CellGroupData[{
 Cell[12040, 337, 167, 3, 35, "Subsection", "ExpressionUUID" -> \
 "fedf857a-e816-493d-ad89-1e4bd429a3f9"],
+Cell[12210, 342, 385, 7, 30, "Input", "ExpressionUUID" -> \
+"5e3d1587-7ab1-4475-b656-b8bf9d709d12"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[12232, 344, 385, 7, 30, "Input", "ExpressionUUID" -> \
-"5e3d1587-7ab1-4475-b656-b8bf9d709d12"],
-Cell[12620, 353, 12401, 252, 447, "Output", "ExpressionUUID" -> \
-"ff9b7ea2-44fb-46af-b533-82d11277ee81"]
-}, Open  ]]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[25070, 611, 153, 3, 35, "Subsection", "ExpressionUUID" -> \
+Cell[12632, 354, 153, 3, 43, "Subsection", "ExpressionUUID" -> \
 "b1138bd5-f044-4e30-bf97-3e684f6067f1"],
 Cell[CellGroupData[{
-Cell[25248, 618, 184, 3, 34, "Subsubsection", "ExpressionUUID" -> \
+Cell[12810, 361, 184, 3, 34, "Subsubsection", "ExpressionUUID" -> \
 "424004f7-b074-4990-9294-68a4a9bd1482"],
-Cell[25435, 623, 1257, 30, 50, "Input", "ExpressionUUID" -> \
+Cell[12997, 366, 1257, 30, 50, "Input", "ExpressionUUID" -> \
 "16e2bedc-fa06-4cea-a73f-15e4c1fba48f"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[26729, 658, 222, 4, 28, "Subsubsection", "ExpressionUUID" -> \
+Cell[14291, 401, 222, 4, 28, "Subsubsection", "ExpressionUUID" -> \
 "ed9482e0-6a1e-4dc4-bdc1-b6d5f4db1f33"],
-Cell[26954, 664, 2457, 54, 202, "Input", "ExpressionUUID" -> \
+Cell[14516, 407, 2457, 54, 202, "Input", "ExpressionUUID" -> \
 "498a6f40-e91b-46e2-a443-67aa36223cfa"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[29448, 723, 158, 3, 28, "Subsubsection", "ExpressionUUID" -> \
+Cell[17010, 466, 158, 3, 28, "Subsubsection", "ExpressionUUID" -> \
 "718eaa73-28bb-47a6-920a-735ac177b933"],
 Cell[CellGroupData[{
-Cell[29631, 730, 565, 13, 50, "Input", "ExpressionUUID" -> \
+Cell[17193, 473, 565, 13, 50, "Input", "ExpressionUUID" -> \
 "b1ba20be-c3f7-4885-84f1-1177c0af1a08"],
-Cell[30199, 745, 13679, 334, 274, "Output", "ExpressionUUID" -> \
+Cell[17761, 488, 13679, 334, 274, "Output", "ExpressionUUID" -> \
 "d2444d86-0c42-48e8-87fa-ce75c5167da6"]
 }, Open  ]]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[43939, 1086, 160, 3, 35, "Subsection", "ExpressionUUID" -> \
+Cell[31501, 829, 160, 3, 35, "Subsection", "ExpressionUUID" -> \
 "7a1b41bc-def9-49fc-bf73-79bd5cd3041b"],
-Cell[44102, 1091, 630, 18, 30, "Input", "ExpressionUUID" -> \
+Cell[31664, 834, 630, 18, 30, "Input", "ExpressionUUID" -> \
 "b2092722-27ad-44a1-bcb5-550772f58777"],
-Cell[44735, 1111, 220, 5, 30, "Input", "ExpressionUUID" -> \
+Cell[32297, 854, 220, 5, 30, "Input", "ExpressionUUID" -> \
 "fe9570de-5388-46bd-927d-0f7cc1d43705"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[44992, 1121, 159, 3, 35, "Subsection", "ExpressionUUID" -> \
+Cell[32554, 864, 159, 3, 35, "Subsection", "ExpressionUUID" -> \
 "d70ebbfb-aad1-458f-83f2-9dc5cbf586f8"],
-Cell[45154, 1126, 1094, 28, 107, "Input", "ExpressionUUID" -> \
+Cell[32716, 869, 1094, 28, 107, "Input", "ExpressionUUID" -> \
 "06e6fe46-536e-4af0-99da-6491110e67f4"],
-Cell[46251, 1156, 397, 8, 30, "Input", "ExpressionUUID" -> \
+Cell[33813, 899, 397, 8, 30, "Input", "ExpressionUUID" -> \
 "47c0693c-209b-4c27-bb2f-4e715bfe1b66"],
-Cell[46651, 1166, 568, 16, 50, "Input", "ExpressionUUID" -> \
+Cell[34213, 909, 568, 16, 50, "Input", "ExpressionUUID" -> \
 "087c8a09-5dcc-4a46-84e8-5da8e0968d37"],
-Cell[47222, 1184, 408, 10, 50, "Input", "ExpressionUUID" -> \
+Cell[34784, 927, 408, 10, 50, "Input", "ExpressionUUID" -> \
 "1b24bab2-cec1-4877-9bf7-52d558af1f0e"],
-Cell[47633, 1196, 413, 11, 30, "Input", "ExpressionUUID" -> \
+Cell[35195, 939, 413, 11, 30, "Input", "ExpressionUUID" -> \
 "fd7079d6-0355-40d1-b18d-264826f442d6"],
-Cell[48049, 1209, 1323, 36, 145, "Input", "ExpressionUUID" -> \
+Cell[35611, 952, 1323, 36, 145, "Input", "ExpressionUUID" -> \
 "cfe04cbb-ed82-494d-acac-9b2460cb9c7f"],
-Cell[49375, 1247, 295, 7, 30, "Input", "ExpressionUUID" -> \
+Cell[36937, 990, 295, 7, 30, "Input", "ExpressionUUID" -> \
 "2dd40369-7447-4ca1-820d-485f43e11381"],
-Cell[49673, 1256, 180, 4, 30, "Input", "ExpressionUUID" -> \
+Cell[37235, 999, 180, 4, 30, "Input", "ExpressionUUID" -> \
 "745eaa9d-55b2-4865-b66c-6152b36f450a"],
-Cell[49856, 1262, 1585002, 25991, 76, "Input", "ExpressionUUID" -> \
+Cell[37418, 1005, 1585002, 25991, 76, "Input", "ExpressionUUID" -> \
 "81ce9d79-70e1-459c-83e7-59ebd9a267f1"]
 }, Closed]]
-}, Closed]]
+}, Open  ]]
 }
 ]
 *)
