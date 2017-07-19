@@ -1,5 +1,7 @@
 # https://wolfr.am/mDLMfxbm
 
+## Link to my Wolfram community post on this topic : https://wolfr.am/ngaRnZDN
+
 # What can special characters in a paper on arxiv.org tell us?
 
 ## Special characters in a paper on arxiv.org
